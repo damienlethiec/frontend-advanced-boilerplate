@@ -1,5 +1,5 @@
 .wrapper-footer {
-  background: #333333;
+  background: $gray-lighter;
   height: 120px;
   padding: 30px 20px;
 }
@@ -8,10 +8,9 @@
   justify-content: space-between;
   display: flex;
   font-size: 25px;
-  color: #CCCCCC;
-}
-
-.footer-items p {
-  font-size: 15px;
-  right: 20px;
+  color: $gray;
+  p {
+    font-size: 15px;
+    right: 20px;
+  }
 }

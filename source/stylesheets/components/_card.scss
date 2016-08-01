@@ -4,10 +4,9 @@
   color: white;
   height: 250px;
   margin:25px 0px;
-}
-
-.card h2{
-  margin-bottom: 8px;
+  h2 {
+    margin-bottom: 8px;
+  }
 }
 
 .card-category {
@@ -21,7 +20,6 @@
   position: absolute;
   bottom: 10px;
   left: 20px;
-
 }
 
 .card-user {
@@ -39,8 +37,7 @@
   background: black;
   opacity: 0;
   border-radius: 5px;
-}
-
-.card-link:hover {
-  opacity: 0.1;
+  &:hover {
+    opacity: 0.1;
+  }
 }
