@@ -89,3 +89,7 @@ activate :deploy do |deploy|
   # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
+
+data.flats.each_key do |owner|
+  proxy "/flats/#{owner}.html", "show.html", :locals => { :owner => owner }, :ignore => true
+end

@@ -1,0 +1,59 @@
+anne:
+  owner_name: Anne Du Wagon
+  picture: card-paris.jpeg
+  owner_picture: anne.jpg
+  name: Anne's home
+  summary: Charming room in Montmartre
+  description: Au nom de toute la communauté des savants, la congolexicomatisation autour de la Géo Physique Spatiale consiste à gérer une position axisienne dans ces prestances, je vous en prie.
+  city: Paris, France
+  wifi: true
+
+romain:
+  owner_name: Romain Paillard
+  picture: card-brussels.jpeg
+  owner_picture: romain.jpg
+  name: Romain's home
+  summary: Nice flat with beer
+  description: Lorsque l'on parle des végétaliens, du végétalisme, la systématique des lois du marché suffit à soutenir cet environnement de 2 345 410 km² dans le prémice, je vous en prie.
+  city: Brussels, BE
+  wifi: false
+
+seb:
+  owner_name: Seb Saunier
+  picture: card-london.jpeg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Wunderful room with patio
+  description: Le colloque à l'égard de la complexité tarde à cadrer les encadrés autour des dialogues intercommunautaires, c’est clair.
+  city: London, UK
+  wifi: true
+
+Pikachu:
+  owner_name: Pikachu
+  picture: card-paris.jpeg
+  owner_picture: anne.jpg
+  name: Pikachu's home
+  summary: Charming room in Montmartre
+  description: Au nom de toute la communauté des savants, la délégation de l'orthodoxisation vise à prévaloir la nucléarité comme pour le lancement de Troposphère V, bonnes fêtes.
+  city: Paris, France
+  wifi: true
+
+Feunard:
+  owner_name: Feunard
+  picture: card-brussels.jpeg
+  owner_picture: romain.jpg
+  name: Feunard's home
+  summary: Nice flat with beer
+  description: Nous n’allons pas seulement danser ou jouer au football, la politique de toute la République Démocratique du Congo doit vanter l'estime du savoir autour des gens qui connaissent beaucoup de choses, merci.
+  city: Brussels, BE
+  wifi: false
+
+Smogo:
+  owner_name: Smogo
+  picture: card-london.jpeg
+  owner_picture: seb.jpg
+  name: Smogo's home
+  summary: Wunderful room with patio
+  description: Une semaine passée sans parler du peuple c’est errer sans abri, autrement dit la force vers ce qu’on appelle la dynamique des sports tarde à uniformiser cet environnement de 2 345 410 km² avec la formule 1+(2x5), mais oui.
+  city: London, UK
+  wifi: true

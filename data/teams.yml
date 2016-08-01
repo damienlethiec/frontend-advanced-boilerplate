@@ -1,0 +1,26 @@
+Pikachu:
+  owner_name: Pikachu
+  picture: card-paris.jpeg
+  owner_picture: anne.jpg
+  name: Anne's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+
+Feunard:
+  owner_name: Feunard
+  picture: card-brussels.jpeg
+  owner_picture: romain.jpg
+  name: Romain's home
+  summary: Nice flat with beer
+  city: Brussels, BE
+  wifi: false
+
+Smogo:
+  owner_name: Smogo
+  picture: card-london.jpeg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Wunderful room with patio
+  city: London, UK
+  wifi: true

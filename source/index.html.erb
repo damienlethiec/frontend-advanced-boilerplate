@@ -23,25 +23,13 @@
 <div class="container">
   <div class="text-center padded features">
     <div class="row">
+      <% data.features.each do |feature, carac| %>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <%= image_tag "beer.png", alt:"beer" %>
-        <h2>Beer !!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        <%= image_tag carac.picture, alt:"beer" %>
+        <h2><%= carac.name %></h2>
+        <p><%= carac.description %></p>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-       <%= image_tag "dollar.png", alt:"dollar" %>
-       <h2>Dollar !!</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur.</p>
-     </div>
-     <div class="col-xs-12 col-sm-6 col-md-3">
-       <%= image_tag "globe.png", alt:"globe" %>
-       <h2>Globe !!</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur.</p>
-     </div>
-     <div class="col-xs-12 col-sm-6 col-md-3">
-      <%= image_tag "heart.png", alt:"heart" %>
-      <h2>Heart !!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <% end %>
     </div>
   </div>
 </div>
@@ -50,45 +38,25 @@
   <div class="container">
     <h2 class="text-center">Your next trip</h2>
     <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <div class="card" style="background-image: linear-gradient(-225deg, rgba(255,102,102,0.4) 0%, rgba(255,204,102, 0.4) 50%), url(<%= image_path'card-paris.jpeg' %>); background-size: cover;">
-          <div class="card-category">Paris</div>
+      <% data.flats.each do |owner, flat| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(255,102,102,0.4) 0%, rgba(255,204,102, 0.4) 50%), url('<%= image_path flat.picture %>'); background-size: cover;">
+          <div class="card-category"><%= flat.city %></div>
           <div class="card-description">
-            <h2>Anne's Home</h2>
-            <p>Charming room with patio</p>
+            <h2><%= flat.name %></h2>
+            <p><%= flat.summary %></p>
           </div>
-          <%= image_tag "anne.jpg", alt:"anne", class:"card-user avatar avatar"%>
-          <%= link_to "", "", class: "card-link"%>
+          <%= image_tag flat.owner_picture, class:"card-user avatar" %>
+          <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
         </div>
       </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="card" style="background-image: linear-gradient(-225deg, rgba(255,102,102,0.4) 0%, rgba(255,204,102, 0.4) 50%), url(<%= image_path'card-brussels.jpeg' %>); background-size: cover;">
-          <div class="card-category">Brussels</div>
-          <div class="card-description">
-            <h2>Romain's Home</h2>
-            <p>Great room with patio</p>
-          </div>
-          <%= image_tag "romain.jpg", alt:"romain", class:"card-user avatar avatar"%>
-          <%= link_to "", "", class: "card-link"%>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="card" style="background-image: linear-gradient(-225deg, rgba(255,102,102,0.4) 0%, rgba(255,204,102, 0.4) 50%), url(<%= image_path'card-london.jpeg' %>); background-size: cover;">
-          <div class="card-category">London</div>
-          <div class="card-description">
-            <h2>Seb's Home</h2>
-            <p>Wunderful room with patio</p>
-          </div>
-          <%= image_tag "seb.jpg", alt:"seb", class:"card-user avatar avatar"%>
-          <%= link_to "", "", class: "card-link"%>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
 <div class="newsletter text-center padded">
   <h2>Get news</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+  <p>Imbiber, porter le rédynamisme par rapport aux diplomaties pousse à partager le chicouangue avéré(e)(s), tu sais ça.</p>
   <form action="#" class="form-inline">
     <input type="email" class="form-control input-lg" placeholder="bob@gmail.com">
     <button type="submit" class="btn btn-danger btn-lg">Sign in</button>
